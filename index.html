@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./styles/style.css">
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="mx-auto px-4 lg:px-10 mt-4">
+        <!-- navbar -->
+       <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl lg:text-4xl raleway-extrabold -ml-6 lg:-ml-4">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <button class="btn bg-[#1DD1001D] rounded-xl">
+                <span class="text-xl raleway-bold text-[#1DD100]">Bus</span>
+                <span><img src="./images/bus-icon.png" alt=""></span>
+              </button>
+            </div>
+          </div>
+       </nav>
+       <!-- banner -->
+       <div class="mt-10 banner-container bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-center linear-gradient rounded-3xl">
+        <div class="space-y-8 text-center px-4 lg:px-28 py-4 lg:py-20 lg:pb-28">
+           <h1 class="text-[#FFFFFF] text-4xl lg:text-6xl raleway-extrabold">End-to-End Travel with 
+            <br>
+            <span class="text-[#1DD100]">P Paribahan</span></h1>
+            <p class="text-[#FFFFFF] text-xs lg:text-xl inter-normal"> One of the primary advantages of online bus ticket agencies is the convenience they offer. Travelers can book their tickets from anywhere with an internet connection, whether it's from the comfort of their homes, offices, or even while on the go using mobile apps.</p>
+            <button class="btn rounded-xl bg-[#1DD100] raleway-bold text-xs lg:text-xl">Buy Tickets</button>
+        </div>
+       </div>
+          <div class="flex flex-col lg:flex-row justify-center gap-4 lg:gap-10 translate-y-4 lg:-translate-y-12">
+            <div class="flex gap-4 w-full lg:w-[25%] bg-[#FFFFFF] rounded-3xl border-b-2 border-[#1DD100] shadow-lg p-4">
+                <img src="./images/people.png" alt="">
+                <div>
+                    <p class="inter-bold text-2xl lg:text-4xl">500K+</p>
+                    <p class="inter-normal text-xs lg:text-xl text-[#03071299]">Registered users</p>
+                </div>
+              </div>
+              <div class="flex gap-4 w-full lg:w-[25%] bg-[#FFFFFF] rounded-3xl border-b-2 border-[#1DD100] shadow-lg p-4"">
+                <img src="./images/ticket-cupon.png" alt="">
+                <div>
+                    <p class="inter-bold text-2xl lg:text-4xl">1.7 lacks</p>
+                    <p class="inter-normal text-xs lg:text-xl text-[#03071299]">Tickets sold</p>
+                </div>
+              </div>
+              <div class="flex gap-4 w-full lg:w-[25%] bg-[#FFFFFF] rounded-3xl border-b-2 border-[#1DD100] shadow-lg p-4">
+                <img src="./images/stoppage.png" alt="">
+                <div>
+                    <p class="inter-bold text-2xl lg:text-4xl">80K+</p>
+                    <p class="inter-normal text-xs lg:text-xl text-[#03071299]">Rental partners</p>
+                </div>
+              </div>
+          </div>
+
+    </header>
+   <!-- main -->
+    <main class="">
+
+        <!-- best offer section -->
+        <section class="mx-auto px-4 lg:px-10 mt-10">
+            <h1 class="raleway-bold text-4xl text-center">Best offers for you</h1>
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between mt-14">
+                <div class="flex bg-[#FFBF0F] rounded-3xl px-4 lg:px-16" >
+                     <div class="flex justify-center items-center">
+                        <div>
+                            <h1 class="inter-extrabold text-3xl">15% OFF</h1>
+                        <p class="inter-bold text-xl">on your next purchase</p>
+                        <p class="text-[#03071299] inter-medium">use by january 2024</p>
+                        </div>
+                    </div>
+                     <img src="./images/cupon-devider.png" alt="">
+                     <div class="flex justify-center items-center lg:px-10">
+                        <div>
+                            <h1 class="raleway-bold text-3xl">NEW15</h1>
+                    <p class="text-[#03071299] raleway-medium">Coupon Code</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="flex bg-[#F78C9C] rounded-3xl px-4 lg:px-16">
+                     <div class="flex justify-center items-center">
+                        <div>
+                            <h1 class="inter-extrabold text-3xl">20% OFF</h1>
+                        <p class="inter-bold text-xl">on your next purchase</p>
+                        <p class="text-[#03071299] inter-medium">use by january 2024</p>
+                        </div>
+                    </div>
+                     <img src="./images/cupon-devider.png" alt="">
+                     <div class="flex justify-center items-center lg:px-10">
+                        <div>
+                            <h1 class="raleway-extrabold text-[22px] lg:text-3xl">Couple20</h1>
+                    <p class="text-[#03071299] raleway-medium">Coupon Code</p>
+                        </div>
+                     </div>
+                </div>            
+            </div>
+            <div class="text-center mt-10">
+                <button class="btn raleway-bold border-[#1DD100] text-[#1DD100] bg-transparent">See All Offers</button>
+            </div>
+        </section>
+
+        <!-- P.H Paribahan Section -->
+        <section class="mt-14 bg-[#F7F8F8] pt-16 lg:pt-28 pb-10 lg:pb-20">
+            <div class="space-y-4">
+                <h1 class=" text-3xl lg:text-4xl raleway-bold text-center">P.H Paribahan</h1>
+            <p class=" text-xs lg:text-xl inter-normal text-[#03071299] w-2/3 text-center mx-auto">These platforms often provide tools for easy comparison of prices, schedules, and amenities offered by different bus operators. This enables travelers to make informed decisions and find the best deals for their journeys.</p>
+            </div>
+           <!-- greenline container -->
+           
+           <div class="mx-auto px-4 lg:px-10 mt-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 bg-[#FFFFFF] shadow-xl rounded-3xl py-4">
+                <div class="col-span-9">
+                    <div class="flex flex-col lg:flex-row justify-between p-6 gap-4 lg:gap-0">
+                        <div class="flex gap-2 w-full lg:w-2/3">
+                            <img src="./images/bus-logo.png" alt="">
+                            <div>
+                                <h1 class="raleway-bold text-xl lg:text-3xl">Greenline Paribahan</h1>
+                                <p class="inter-normal text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                            </div>       
+                        </div>
+                        <div class="flex gap-2 bg-[#1DD1001D] rounded-lg p-2 lg:p-4 w-2/3 lg:w-[19%]">
+                            <img src="./images/seat-green.png" alt="">
+                            <p class="text-[#1DD100] inter-medium"><span>40</span> Seats left</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 bg-[#F7F8F8] mx-2 lg:mx-6 rounded-2xl py-8">
+                        <div class="flex justify-between mx-2 lg:mx-6 border-b-2 border-dotted pb-4">
+                            <p class="text-lg raleway-semibold">Route</p>
+                            <p class="text-lg raleway-bold">Dhaka - Sylhet</p>
+                        </div>
+                        <div class="flex justify-between mx-2 lg:mx-6
+                        border-b-2 border-dotted pb-4">
+                            <p class=" text-lg raleway-semibold">Departure Time</p>
+                            <p class="text-lg raleway-bold">9:00 PM</p>
+                        </div>
+                        <div class="flex flex-col gap-4 lg:flex-row justify-between px-4">
+                            <button class="btn bg[#0307120D] shadow-md">Boarding Point - Laxmipur</button>
+                            <button class="btn bg[#0307120D] shadow-md">Dropping Point - Bogura</button>
+                            <button class="btn bg[#0307120D] shadow-md">Est. Time - 11 Hour</button>
+                        </div>
+                    </div>
+                </div>
+                <img class=" hidden lg:block " src="./images/info-devider.png" alt="">
+                <div class="col-span-2 flex justify-center items-center">
+                    <div class="text-center ml-0 lg:-ml-14 space-y-3">
+                        <img class="mx-auto" src="./images/fare.png" alt="">
+                        <p class="text-2xl raleway-bold">550 Taka</p>
+                        <p class="text-lg raleway-semibold text-[#03071299]">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+   <!-- Select Your Seat -->
+            <div class="bg-[#FFFFFF] shadow-xl rounded-3xl py-6 mt-6 px-6 grid grid-cols-2 lg:grid-cols-5 gap-10">
+                <!-- left part -->
+                <div class="col-span-3 border-r-2 border-dashed pr-2 lg:pr-6">
+                    <h1 class="text-2xl raleway-semibold border-b-2 border-dashed pb-2">Select Your Seat</h1>
+                    <div class="flex justify-between border-b-2 border-dashed">
+                        <div class="flex gap-2 py-2">
+                            <div class="">
+                                <img src="./images/seat-gray.png" alt="">
+                            </div>
+                            <p class="text-[#03071299] inter-medium">Available</p>
+                        </div>
+                        <div>
+                            <div class="flex gap-2 py-2">
+                                <div class="">
+                                    <img src="./images/seat-green-filled.png" alt="">
+                                </div>
+                                <p class="text-[#03071299] inter-medium text-[#1DD100]">Selected</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- bus seat section -->
+                    <div class="mt-8">
+                        
+                            <!-- driver seat -->
+                        <div class="flex justify-end">
+                            <button class="btn px-4 lg:px-8 bg-[#0307121A]">
+                                <img src="./images/Vector.png" alt="">
+                            </button>
+                        </div>
+                        <!-- passenger seat  -->
+                        <div class="mt-6">
+                            <div class="grid grid-cols-2 gap-12">
+                                 <!-- left seat -->
+                           <div class="grid grid-cols-7 gap-2 lg:gap-6">
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">A</div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                                A1
+                           </button>          
+                           <button class="btn col-span-3 px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                            A2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">B</div>
+                            <button class="btn col-span-3 px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                                B1
+                           </button>          
+                           <button class="btn col-span-3  px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                            B2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">C</div>
+                            <button class="btn col-span-3 px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                                C1
+                           </button>          
+                           <button class="btn col-span-3 px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                            C2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">D</div>
+                            <button class="btn col-span-3 px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                                D1
+                           </button>          
+                           <button class="btn col-span-3  px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                            D2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">E</div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                                E1
+                           </button>          
+                           <button class="btn col-span-3  px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            E2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">F</div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                                F1
+                           </button>          
+                           <button class="btn col-span-3  px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            F2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">G</div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                                G1
+                           </button>          
+                           <button class="btn col-span-3  px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            G2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">H</div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                                H1
+                           </button>          
+                           <button class="btn col-span-3  px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            H2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">I</div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                                I1
+                           </button>          
+                           <button class="btn col-span-3  px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            I2
+                           </button>
+                            <div class="col-span-1 flex items-center inter-medium text-lg text-[#03071299]">J</div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                                J1
+                           </button>          
+                           <button class="btn col-span-3  px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            J2
+                           </button>
+
+                           </div>
+
+                           <!-- right seat -->
+                           <div class="grid grid-cols-7 gap-2 lg:gap-6">
+                            <div class="col-span-1"></div>
+                            <button class="btn col-span-3 px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                           A3
+                           </button>          
+                           <button class="btn col-span-3 px-4  lg:px-8 inter-medium text-lg text-[#03071299]">
+                            A4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           B3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            B4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           C3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            C4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           D3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            D4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3  px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           E3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            E4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3  px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           F3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            F4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           G3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            G4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           H3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            H4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           I3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            I4
+                           </button>
+
+                           <div class="col-span-1"></div>
+                            <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                           J3
+                           </button>          
+                           <button class="btn col-span-3 px-4 lg:px-8 inter-medium text-lg text-[#03071299]">
+                            J4
+                           </button>
+
+                           </div>
+                            </div>
+                           
+                                                         
+                       </div>
+                        
+                    </div>
+                </div>
+                <!-- right part -->
+                <div class="col-span-2">
+                    <h1 class="text-2xl raleway-semibold border-b-2 border-dashed pb-2">Select Your Seat</h1>
+                    <div class="grid grid-cols-3 mt-8">
+
+
+                    </div>
+                </div>
+            </div>
+
+           </div>
+
+        </section>
+
+
+    </main>
+    <!-- footer -->
+
+    <footer>
+
+    </footer>
+    
+
+    <script src="./script/utility.js"></script>
+    <script src="./script/index.js"></script>
+</body>
+</html>

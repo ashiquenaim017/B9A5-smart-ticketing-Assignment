@@ -143,12 +143,26 @@ document.getElementById('next-btn').addEventListener('click',()=>{
     document.getElementById('passenger-number').value="";
     document.getElementById('email-id').value="";
 
+    // Swal.fire({
+    //     title: "Success",
+    //     text: `Thank you for Booking Our Bus Seats. 
+    //     We are working hard to find the best service and deals for you. 
+    //     Shortly you will find a confirmation in your email.`,
+    //     icon: "success",
+        
+    //   });
+
+
     Swal.fire({
         title: "Success",
         text: `Thank you for Booking Our Bus Seats. 
         We are working hard to find the best service and deals for you. 
         Shortly you will find a confirmation in your email.`,
         icon: "success",
-        
+        confirmButtonText: "Continue",
+        customClass: {
+          confirmButton: 'custom-ok-button-class'
+        }
       });
+      
 })

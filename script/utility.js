@@ -36,9 +36,26 @@ function seatLeft(idName){
  }
 
  function seatCountFunc(){
+    const applybtn=document.getElementById('apply-btn');
+    const couponInputField=document.getElementById('input-field-of-coupon');
     let seatCount=parseInt(document.getElementById('seat-count').innerText);
     seatCount++;
     document.getElementById('seat-count').innerText=seatCount;
+    if(seatCount===4)
+    {
+    applybtn.classList.add('bg-[#1DD100]');
+    applybtn.removeAttribute('disabled');
+    couponInputField.removeAttribute('disabled');
+    
+
+    for(const passengerSeat of passengerSeats)
+    {
+        passengerSeat.setAttribute('disabled',true);
+    }
+    
+    }
+  
+    
  }
 
  function totalPrice(){
@@ -46,5 +63,8 @@ function seatLeft(idName){
     let total=parseInt(document.getElementById('total-price').innerText);
     total+=parseInt(document.getElementsByClassName('price')[0].innerText);
     document.getElementById('total-price').innerText=total;
+    let grandTotal=parseInt(document.getElementById('grand-total').innerText);
+    grandTotal=total;
+    document.getElementById('grand-total').innerText=total;
 
  }

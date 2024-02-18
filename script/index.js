@@ -56,15 +56,105 @@ const j4=document.getElementById('j4');
 
 const passengerSeats=[a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4,e1,e2,e3,e4,f1,f2,f3,f4,g1,g2,g3,g4,h1,h2,h3,h4,i1,i2,i3,i4,j1,j2,j3,j4];
 
+const selectedSeats=[];
 for (const passengerSeat of passengerSeats)
-{
+{     
     passengerSeat.addEventListener('click',()=>{
-        passengerSeat.classList.add('hover:bg-[#1DD100]')
-        passengerSeat.classList.add('bg-[#1DD100]')
-        seatLeft('seat-left');
-        addSeatClassPrice(passengerSeat.innerText.toLowerCase());
-        seatCountFunc();
-        totalPrice();
+        
+        
+        
+        passengerSeat.classList.add('hover:bg-[#1DD100]'); 
+         passengerSeat.setAttribute('disabled','true'); 
+        
+        passengerSeat.classList.add('bg-[#1DD100]');
+
+        
+            
+            seatLeft('seat-left');
+            addSeatClassPrice(passengerSeat.innerText.toLowerCase());
+            seatCountFunc();
+            totalPrice();
+        
+        
+        
+                       
+
     })
     
 }
+// passenger number event
+
+document.getElementById('passenger-number').addEventListener('keyup',(e)=>{
+    const seat=parseInt(document.getElementById('seat-count').innerText);
+    const nxtbtn=document.getElementById('next-btn');
+    console.log(e.target.value.length);
+    if(e.target.value.length>0 && seat>0 )
+    {
+          nxtbtn.removeAttribute('disabled');
+    }
+
+})
+
+// apply button
+
+const applyBtn=document.getElementById('apply-btn');
+applyBtn.addEventListener('click',()=>{
+    const discountContainer=document.getElementById('discount-container');
+    const applyBtn=document.getElementById('apply-btn');
+    const inputFieldOfCoupon=document.getElementById('input-field-of-coupon');
+    let discount=parseInt(document.getElementById('discount').innerText);
+    const totalPrice=parseInt(document.getElementById('total-price').innerText);
+    let grandTotal=parseInt(document.getElementById('grand-total').innerText);
+    if(inputFieldOfCoupon.value==='NEW15')
+    {
+           discount=totalPrice*0.15;
+           grandTotal=totalPrice-discount;
+           document.getElementById('grand-total').innerText=grandTotal;
+           document.getElementById('discount').innerText=discount;
+           discountContainer.classList.remove('hidden');
+
+    }
+    else if(inputFieldOfCoupon.value==='Couple20')
+    {
+           discount=totalPrice*0.2;
+           grandTotal=totalPrice-discount;
+           document.getElementById('grand-total').innerText=grandTotal;
+           document.getElementById('discount').innerText=discount;
+           discountContainer.classList.remove('hidden');
+
+    }
+
+    else
+    alert("Your Coupon is Not Valid");
+
+    const grandTotalCOntainer=document.getElementById('grand-total-container');
+    grandTotalCOntainer.classList.add('mt-2','lg:mt-6')
+    applyBtn.setAttribute('disabled','true');
+    inputFieldOfCoupon.setAttribute('disabled','true');
+    applyBtn.classList.add('hidden');
+    inputFieldOfCoupon.classList.add('hidden');
+    applyBtn.classList.remove('bg-[#1DD100]');
+    inputFieldOfCoupon.value="";
+
+
+})
+
+
+// Next Button
+
+document.getElementById('next-btn').addEventListener('click',()=>{
+
+
+    document.getElementById('passenger-name').value="";
+    document.getElementById('passenger-number').value="";
+    document.getElementById('email-id').value="";
+
+    Swal.fire({
+        title: "Success",
+        text: `Thank you for Booking Our Bus Seats. 
+        We are working hard to find the best service and deals for you. 
+        Shortly you will find a confirmation in your email.`,
+        icon: "success",
+        
+      });
+})

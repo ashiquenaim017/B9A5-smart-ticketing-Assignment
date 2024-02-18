@@ -50,7 +50,7 @@ function seatLeft(idName){
 
     for(const passengerSeat of passengerSeats)
     {
-        passengerSeat.setAttribute('disabled',true);
+        passengerSeat.classList.add('pointer-events-none');
     }
     
     }

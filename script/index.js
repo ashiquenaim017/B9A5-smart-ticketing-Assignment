@@ -56,28 +56,22 @@ const j4=document.getElementById('j4');
 
 const passengerSeats=[a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4,e1,e2,e3,e4,f1,f2,f3,f4,g1,g2,g3,g4,h1,h2,h3,h4,i1,i2,i3,i4,j1,j2,j3,j4];
 
-const selectedSeats=[];
+let count=0;
 for (const passengerSeat of passengerSeats)
 {     
     passengerSeat.addEventListener('click',()=>{
         
         
-        
-        passengerSeat.classList.add('hover:bg-[#1DD100]'); 
-         passengerSeat.setAttribute('disabled','true'); 
-        
+        passengerSeat.classList.add('hover:bg-[#1DD100]');
+         
         passengerSeat.classList.add('bg-[#1DD100]');
-
-        
-            
-            seatLeft('seat-left');
-            addSeatClassPrice(passengerSeat.innerText.toLowerCase());
-            seatCountFunc();
-            totalPrice();
-        
-        
-        
-                       
+       
+        seatLeft('seat-left');
+        addSeatClassPrice(passengerSeat.innerText.toLowerCase());
+        seatCountFunc();
+        totalPrice();
+        passengerSeat.classList.add('pointer-events-none');
+                     
 
     })
     

@@ -56,7 +56,7 @@ const j4=document.getElementById('j4');
 
 const passengerSeats=[a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4,e1,e2,e3,e4,f1,f2,f3,f4,g1,g2,g3,g4,h1,h2,h3,h4,i1,i2,i3,i4,j1,j2,j3,j4];
 
-let count=0;
+
 for (const passengerSeat of passengerSeats)
 {     
     passengerSeat.addEventListener('click',()=>{
@@ -71,8 +71,8 @@ for (const passengerSeat of passengerSeats)
         seatCountFunc();
         totalPrice();
         passengerSeat.classList.add('pointer-events-none');
-                     
 
+                    
     })
     
 }
@@ -143,16 +143,6 @@ document.getElementById('next-btn').addEventListener('click',()=>{
     document.getElementById('passenger-number').value="";
     document.getElementById('email-id').value="";
 
-    // Swal.fire({
-    //     title: "Success",
-    //     text: `Thank you for Booking Our Bus Seats. 
-    //     We are working hard to find the best service and deals for you. 
-    //     Shortly you will find a confirmation in your email.`,
-    //     icon: "success",
-        
-    //   });
-
-
     Swal.fire({
         title: "Success",
         text: `Thank you for Booking Our Bus Seats. 
@@ -164,5 +154,6 @@ document.getElementById('next-btn').addEventListener('click',()=>{
           confirmButton: 'custom-ok-button-class'
         }
       });
+
       
 })

@@ -51,7 +51,8 @@ function seatLeft(idName){
     for(const passengerSeat of passengerSeats)
          {
             passengerSeat.classList.add('pointer-events-none');
-         }     
+         } 
+         alert("It is the last seat you can select.") ;   
     }
    
  }

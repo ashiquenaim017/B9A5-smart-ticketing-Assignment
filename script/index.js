@@ -106,6 +106,8 @@ applyBtn.addEventListener('click',()=>{
            document.getElementById('grand-total').innerText=grandTotal;
            document.getElementById('discount').innerText=discount;
            discountContainer.classList.remove('hidden');
+           applyBtn.classList.add('hidden');
+           inputFieldOfCoupon.classList.add('hidden');
 
     }
     else if(inputFieldOfCoupon.value==='Couple20')
@@ -115,6 +117,8 @@ applyBtn.addEventListener('click',()=>{
            document.getElementById('grand-total').innerText=grandTotal;
            document.getElementById('discount').innerText=discount;
            discountContainer.classList.remove('hidden');
+        applyBtn.classList.add('hidden');
+           inputFieldOfCoupon.classList.add('hidden');
 
     }
 
@@ -123,13 +127,12 @@ applyBtn.addEventListener('click',()=>{
 
     const grandTotalCOntainer=document.getElementById('grand-total-container');
     grandTotalCOntainer.classList.add('mt-2','lg:mt-6')
-    applyBtn.setAttribute('disabled','true');
-    inputFieldOfCoupon.setAttribute('disabled','true');
-    applyBtn.classList.add('hidden');
-    inputFieldOfCoupon.classList.add('hidden');
-    applyBtn.classList.remove('bg-[#1DD100]');
+    // applyBtn.setAttribute('disabled','true');
+    // inputFieldOfCoupon.setAttribute('disabled','true');
+    // applyBtn.classList.add('hidden');
+    // inputFieldOfCoupon.classList.add('hidden');
+    // applyBtn.classList.remove('bg-[#1DD100]');
     inputFieldOfCoupon.value="";
-
 
 })
 
